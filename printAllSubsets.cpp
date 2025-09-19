@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+// time complexity to print all subsets are O(2^n * n);
+
 void getAllSubsets(vector<int>& arr, vector<int>& ans, int i, vector<vector<int>>& allSubsets){
     if(i == arr.size()){
         allSubsets.push_back(ans);
