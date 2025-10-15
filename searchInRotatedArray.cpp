@@ -20,7 +20,7 @@ int searchInRotatedArr(vector<int> arr, int tar){
                 st = mid + 1;
             }
         }else{
-            if(arr[mid] <= arr[mid] && tar <= arr[end]){
+            if(arr[mid] <= tar && tar <= arr[end]){
                 st = mid+1;
             }else{
                 end = mid - 1;
@@ -34,7 +34,7 @@ int searchInRotatedArr(vector<int> arr, int tar){
  
 int main() {
    vector<int> arr = {3,4,5,6,7,0,1,2};
-   int tar = 0;
+   int tar = 3;
 
    cout << searchInRotatedArr(arr, tar);
 
